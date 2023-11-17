@@ -5,9 +5,12 @@ const header = document.createElement('h1');
 header.innerText = "Javascript";
 heading.parentElement.replaceChild(header, heading);
 
-// 2. Use the class='paragraph' and change the information to 'This is a language I have mastered and I am proud of myself. I complished this because I believed in myself'
+// 2. Use the class='paragraph' and change the information to 'This is a language I have mastered and I am proud of myself. I accomplished this because I believed in myself'
 
-const paragraph = document.getElementsByClassName('paragraph')[0];
-
+const paragraph = document.getElementsByClassName('paragraph');
+const selectedElement = paragraph[0]; //Note to self: use index because getElementsbyClass returns an array
+selectedElement.innerText = "This is a language I have mastered and I am proud of myself. I accomplished this because I believed in myself";
+selectedElement.parentElement
+.replaceChild(paragraph, selectedElement);
 
 
