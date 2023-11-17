@@ -13,4 +13,7 @@ selectedElement.innerText = "This is a language I have mastered and I am proud o
 selectedElement.parentElement
 .replaceChild(paragraph, selectedElement);
 
+// 3. Use the h3 element and change the heading(Subheading) to 'Things I've accomplished so far'. Hint: use querySelector
+let subHeading = document.querySelector("h3");
 
+subHeading.innerText = "Things I've accomplished so far";
