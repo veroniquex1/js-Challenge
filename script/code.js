@@ -10,10 +10,9 @@ heading.parentElement.replaceChild(header, heading);
 const paragraph = document.getElementsByClassName('paragraph');
 const selectedElement = paragraph[0]; //Note to self: use index because getElementsbyClass returns an array
 selectedElement.innerText = "This is a language I have mastered and I am proud of myself. I accomplished this because I believed in myself";
-selectedElement.parentElement
-.replaceChild(paragraph, selectedElement);
+//selectedElement.parentElement
+//.replaceChild(paragraph, selectedElement);
 
 // 3. Use the h3 element and change the heading(Subheading) to 'Things I've accomplished so far'. Hint: use querySelector
 let subHeading = document.querySelector("h3");
-
 subHeading.innerText = "Things I've accomplished so far";
